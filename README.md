@@ -32,6 +32,9 @@ Current Status:
 
 Currently in the CAD/prototype phase, utilizing the breadboard to embed code into the control board, and transforming the components into CAD models on Autodesk Fusion.
 
+<img width="4000" height="3000" alt="20260520_094043" src="https://github.com/user-attachments/assets/60b2f2a4-c768-4c5b-84f8-88015a21cbdf" />
+
+<img width="1836" height="997" alt="Screenshot 2026-05-20 111754" src="https://github.com/user-attachments/assets/15a70b63-dd18-467c-8ac1-2f5f5cf8e7bd" />
 
 References:
 
