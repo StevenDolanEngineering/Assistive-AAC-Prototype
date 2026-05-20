@@ -22,3 +22,11 @@ Hardware:
 Current Status:
 
 Currently in the CAD/prototype phase, utilizing the breadboard to embed code into the control board, and transforming the components into CAD models on Autodesk Fusion.
+
+
+References:
+[1] "Top 10 AAC Devices for Speech Therapy (2026 SLP Guide)," SpeechPathologyGraduatePrograms.org, Jan. 22, 2026. [Online]. Available: https://www.speechpathologygraduateprograms.org/blog/top-10-aac-augmentative-and-alternative-communication-devices/ [Accessed: May 5, 2026].
+
+[2] Centers for Disease Control and Prevention, "Disability Impacts All of Us Infographic," CDC.gov, May 15, 2024. [Online]. Available: https://www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html [Accessed: May 5, 2026].
+
+[3] Social Security Administration, Office of the Chief Actuary, "Disability and death probability tables for insured workers who attain age 21 in 2022," Actuarial Note No. 2022.6, July 2022. [Online]. Available: https://www.ssa.gov/oact/NOTES/ran6/an2022-6.pdf [Accessed: May 5, 2026]
