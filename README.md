@@ -25,6 +25,7 @@ Currently in the CAD/prototype phase, utilizing the breadboard to embed code int
 
 
 References:
+
 [1] "Top 10 AAC Devices for Speech Therapy (2026 SLP Guide)," SpeechPathologyGraduatePrograms.org, Jan. 22, 2026. [Online]. Available: https://www.speechpathologygraduateprograms.org/blog/top-10-aac-augmentative-and-alternative-communication-devices/ [Accessed: May 5, 2026].
 
 [2] Centers for Disease Control and Prevention, "Disability Impacts All of Us Infographic," CDC.gov, May 15, 2024. [Online]. Available: https://www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html [Accessed: May 5, 2026].
