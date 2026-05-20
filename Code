@@ -1,0 +1,105 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+
+const int PINS[] = {2, 3, 4, 5, 6};
+
+byte smiley[8] = {
+  B00000, B10001, B00000, B00000, B10001, B01110, B00000, B00000
+};
+
+String greetings[] = {
+  "Hello! I am free and available to chat! \x08",
+  "Good morning everyone! \x08",
+  "Free to chat until upcoming client"
+};
+
+String busy[] = {
+  "Closed for concentration!",
+  "I'm currently in a focus group. It's about me. I'm focusing.",
+  "Out on a walk!"
+};
+
+String affirm[] = {
+  "Your words matter! \x08",
+  "I get better with practice!",
+  "Mistakes are how I learn \x08"
+};
+
+String overstim[] = {
+  "I need time and space, please. Thank you!",
+  "Taking time to regulate. Thank you for understanding!",
+  "The tism is really going off today. I'm gonna need a minute."
+};
+
+String vibes[] = {
+  "Sounds like a lotta HOOPLA!!",
+  "My name is Stan and I was wrong. I'm singing the Stan wrong song.",
+  "Not my circus, not my monkies"
+};
+
+String labels[] = {"Available", "Busy", "Affirmations", "Overstimulated", "Vibes"};
+
+String* allCategories[] = {greetings, busy, affirm, overstim, vibes};
+int categorySize[] = {3, 3, 3, 3, 3};
+
+int currentCategory = -1;
+int currentIndex = 0;
+int scrollPos = 0;
+unsigned long lastScrollTime = 0;
+const int scrollSpeed = 450;
+
+void setup() {
+  lcd.begin(16, 2);
+  lcd.createChar(8, smiley);
+
+  for(int i = 0; i < 5; i++) {
+    pinMode(PINS[i], INPUT);
+  }
+  lcd.print("Ready to speak");
+}
+
+void loop() {
+  for (int i = 0; i < 5; i++) {
+    if (digitalRead(PINS[i]) == HIGH) {
+      if (currentCategory == i) {
+        currentIndex = (currentIndex + 1) % 4;
+      } else {
+        currentCategory = i;
+        currentIndex = 0;
+      }
+
+      scrollPos = 0;
+      lcd.clear();
+      
+      if (currentIndex == 3) {
+        currentCategory = -1;
+      } else {
+        lcd.setCursor(0, 1);
+        lcd.print(labels[i]);
+      }
+      delay(300);
+    }
+  }
+  if (currentCategory != -1 && currentIndex < 3) {
+    if (millis() - lastScrollTime > scrollSpeed) {
+      lastScrollTime = millis();
+
+      String fullMsg = allCategories[currentCategory][currentIndex];
+      lcd.setCursor(0, 0);
+
+      String displayStr = "";
+      for (int i = 0; i < 16; i++) {
+        int charIdx = (scrollPos + i) % (fullMsg.length() + 4);
+        displayStr += (charIdx < fullMsg.length()) ? fullMsg[charIdx] : ' ';
+      }
+
+      lcd.print(displayStr);
+      scrollPos++;
+
+      if (scrollPos >= fullMsg.length() + 4) {
+        scrollPos = 0;
+      }
+    }   
+  }
+}
