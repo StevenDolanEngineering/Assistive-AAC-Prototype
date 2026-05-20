@@ -10,13 +10,13 @@ Not every individual communicates through spoken language. Be it because of trau
 
 Hardware:
 
-1x Breadboard
-1x ELEGOO UNO R3 Controller Board
-1x 16x2 LCD Screen
-5x Buttons
-1x Potentiometer
-5x 10K resistors
-5x 104pF capicitors
+1x Breadboard;
+1x ELEGOO UNO R3 Controller Board;
+1x 16x2 LCD Screen;
+5x Buttons;
+1x Potentiometer;
+5x 10K resistors;
+5x 104pF capicitors;
 26x Jumper Wires of varying lengths
 
 Current Status:
