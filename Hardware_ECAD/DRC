@@ -1,5 +1,5 @@
 ** Drc report for Learning KiCAD.kicad_pcb **
-** Created on 2026-05-29T13:04:39 **
+** Created on 2026-05-29T13:18:08 **
 ** Report includes: Errors, Warnings, Exclusions **
 
 ** Found 4 DRC violations **
@@ -16,50 +16,34 @@
     Local override; warning
     @(145.7200 mm, 49.2000 mm): Footprint J4
 
-** Found 17 unconnected pads **
+** Found 13 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(126.4160 mm, 49.2000 mm): PTH pad 4 [GND] of J2
-    @(140.6400 mm, 97.4600 mm): PTH pad 6 [GND] of J1
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(143.1800 mm, 97.4600 mm): PTH pad 7 [GND] of J1
-    @(140.6400 mm, 97.4600 mm): PTH pad 6 [GND] of J1
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(90.5000 mm, 130.0000 mm): Zone [GND] on F.Cu, priority 0
-    @(143.1800 mm, 97.4600 mm): PTH pad 7 [GND] of J1
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(138.1000 mm, 97.4600 mm): PTH pad 5 [+5V] of J1
-    @(158.5000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 52.5000 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(183.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW1
     @(181.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+    @(183.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW1
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(193.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW2
     @(191.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+    @(193.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW2
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(203.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW3
     @(201.2000 mm, 96.7600 mm): PTH pad 5 [+5V] of A1
+    @(203.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW3
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(201.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
     @(203.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW3
+    @(201.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
 [unconnected_items]: Missing connection between items
     Local override; error
     @(213.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW4
     @(211.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(221.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 10.0000 mm
     @(223.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW5
-    @(238.5000 mm, 106.0000 mm): Track [+5V] on F.Cu, length 24.7487 mm
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(252.9867 mm, 87.7250 mm): Track [+5V] on F.Cu, length 0.9734 mm
+    @(252.0133 mm, 87.7250 mm): Track [+5V] on F.Cu, length 19.1107 mm
     @(252.5000 mm, 58.4200 mm): PTH pad 15 [+5V] of J5
 [unconnected_items]: Missing connection between items
     Local override; error
