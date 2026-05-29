@@ -52,6 +52,9 @@ int currentIndex = 0;
 int scrollPos = 0;
 unsigned long lastScrollTime = 0;
 const int scrollSpeed = 450;
+unsigned long lastDebounceTime[] = {0, 0, 0, 0, 0}; // Logs the last time an input pin toggled
+int lastButtonState[] = {LOW, LOW, LOW, LOW, LOW};  // Logs the previous physical reading
+const unsigned long debounceDelay = 50;             // 50ms filter window
 
 void setup() {
   lcd.begin(16, 2);
@@ -65,16 +68,26 @@ void setup() {
 
 void loop() {
   for (int i = 0; i < 5; i++) {
-    if (digitalRead(PINS[i]) == HIGH) {
-      if (currentCategory == i) {
-        currentIndex = (currentIndex + 1) % 4;
-      } else {
-        currentCategory = i;
-        currentIndex = 0;
-      }
+    int reading = digitalRead(PINS[i]);
 
-      scrollPos = 0;
-      lcd.clear();
+    // Check if the physical button state changed
+    if (reading != lastButtonState[i]) {
+      lastDebounceTime[i] = millis(); // Reset the filtering timer
+    }
+
+    // If 50 milliseconds have passed since the last bounce, lock in the stable state
+    if ((millis() - lastDebounceTime[i]) > debounceDelay) {
+      // If the stable reading is HIGH, it means the buton is actively pressed down
+      if (reading == HIGH && currentCategory != i) {
+        if (currentCategory == i) {
+          currentIndex = (currentIndex + 1) % 4; // Cycle messages safely
+        } else {
+          currentCategory = i;
+          currentIndex = 0;
+        }
+
+        scrollPos = 0;
+        lcd.clear();
       
       if (currentIndex == 3) {
         currentCategory = -1;
@@ -82,9 +95,12 @@ void loop() {
         lcd.setCursor(0, 1);
         lcd.print(labels[i]);
       }
-      delay(300);
     }
   }
+
+  // Save the reading so we can compare it on the next loop cycle
+  lastButtonState[i] = reading;
+}
   if (currentCategory != -1 && currentIndex < 3) {
     if (millis() - lastScrollTime > scrollSpeed) {
       lastScrollTime = millis();
