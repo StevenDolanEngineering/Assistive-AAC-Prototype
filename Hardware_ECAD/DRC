@@ -1,0 +1,119 @@
+** Drc report for Learning KiCAD.kicad_pcb **
+** Created on 2026-05-29T12:53:27 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 6 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(163.5000 mm, 46.6600 mm): Segment on Edge.Cuts
+    @(146.9900 mm, 47.8700 mm): Segment of J4 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(163.5000 mm, 46.6600 mm): Segment on Edge.Cuts
+    @(164.8300 mm, 50.5300 mm): Segment of J4 on F.Silkscreen
+[lib_footprint_mismatch]: Footprint 'PinSocket_1x08_P2.54mm_Vertical' does not match copy in library 'Connector_PinSocket_2.54mm'
+    Local override; warning
+    @(127.9400 mm, 97.4600 mm): Footprint J1
+[lib_footprint_mismatch]: Footprint 'PinSocket_1x06_P2.54mm_Vertical' does not match copy in library 'Connector_PinSocket_2.54mm'
+    Local override; warning
+    @(150.8000 mm, 97.4600 mm): Footprint J3
+[lib_footprint_mismatch]: Footprint 'PinSocket_1x10_P2.54mm_Vertical' does not match copy in library 'Connector_PinSocket_2.54mm'
+    Local override; warning
+    @(118.7960 mm, 49.2000 mm): Footprint J2
+[lib_footprint_mismatch]: Footprint 'PinSocket_1x08_P2.54mm_Vertical' does not match copy in library 'Connector_PinSocket_2.54mm'
+    Local override; warning
+    @(145.7200 mm, 49.2000 mm): Footprint J4
+
+** Found 20 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.4160 mm, 49.2000 mm): PTH pad 4 [GND] of J2
+    @(140.6400 mm, 97.4600 mm): PTH pad 6 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(140.6400 mm, 97.4600 mm): PTH pad 6 [GND] of J1
+    @(143.1800 mm, 97.4600 mm): PTH pad 7 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(155.5000 mm, 123.9600 mm): Track [GND] on F.Cu, length 4.2426 mm
+    @(143.1800 mm, 97.4600 mm): PTH pad 7 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(196.1200 mm, 96.7600 mm): PTH pad 7 [GND] of A1
+    @(193.5000 mm, 101.3800 mm): Track [GND] on F.Cu, length 15.4200 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(217.0000 mm, 113.0000 mm): PTH pad 2 [GND] of SW5
+    @(223.5000 mm, 113.0000 mm): Track [GND] on F.Cu, length 4.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(223.5000 mm, 101.3800 mm): Track [GND] on F.Cu, length 45.4200 mm
+    @(226.4250 mm, 106.0750 mm): Track [GND] on F.Cu, length 22.1900 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.1000 mm, 97.4600 mm): PTH pad 5 [+5V] of J1
+    @(158.5000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 52.5000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(183.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW1
+    @(181.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(193.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW2
+    @(191.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(203.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW3
+    @(201.2000 mm, 96.7600 mm): PTH pad 5 [+5V] of A1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(201.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+    @(203.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(213.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW4
+    @(211.0000 mm, 123.5000 mm): Track [+5V] on F.Cu, length 8.4853 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(223.5000 mm, 117.5000 mm): PTH pad 1 [+5V] of SW5
+    @(238.5000 mm, 106.0000 mm): Track [+5V] on F.Cu, length 24.7487 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(253.6750 mm, 88.4133 mm): Track [+5V] on F.Cu, length 0.9734 mm
+    @(252.5000 mm, 58.4200 mm): PTH pad 15 [+5V] of J5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(121.3360 mm, 49.2000 mm): PTH pad 2 [/SDA/A4] of J2
+    @(160.9600 mm, 97.4600 mm): PTH pad 5 [/SDA/A4] of J3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(118.7960 mm, 49.2000 mm): PTH pad 1 [/SCL/A5] of J2
+    @(163.5000 mm, 97.4600 mm): PTH pad 6 [/SCL/A5] of J3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(187.0000 mm, 113.0000 mm): PTH pad 2 [Net-(A1-D3)] of SW2
+    @(193.5000 mm, 113.0000 mm): Track [Net-(A1-D3)] on F.Cu, length 4.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(207.0000 mm, 113.0000 mm): PTH pad 2 [Net-(A1-D5)] of SW4
+    @(213.5000 mm, 113.0000 mm): Track [Net-(A1-D5)] on F.Cu, length 4.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(197.0000 mm, 113.0000 mm): PTH pad 2 [Net-(A1-D4)] of SW3
+    @(203.5000 mm, 113.0000 mm): Track [Net-(A1-D4)] on F.Cu, length 4.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(177.0000 mm, 113.0000 mm): PTH pad 2 [Net-(A1-D2)] of SW1
+    @(183.5000 mm, 113.0000 mm): PTH pad 2 [Net-(A1-D2)] of SW1
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+
+** End of Report **
